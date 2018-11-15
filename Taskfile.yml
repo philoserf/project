@@ -1,0 +1,22 @@
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - task: lint
+
+  lint:
+    desc: all lint tasks
+    cmds:
+      - task: markdownlint
+      - task: yamllint
+
+  markdownlint:
+    desc: markdown lint tasks
+    cmds:
+      - markdownlint --fix .github/**/*.md **/*.md
+
+  yamllint:
+    desc: yaml lint tasks
+    cmds:
+      - yamllint .*.yaml .yamllint

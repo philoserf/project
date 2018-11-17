@@ -2,8 +2,7 @@
 
 > blurb
 
-[![Report Card][b1b]][b1l] | [![Godoc][b2b]][b2l] | [![Release][b3b]][b3l] |
-[![Stability: Experimental][b4b]][b4l]
+[![Report Card][b1]][b1l] | [![Godoc][b2]][b2l] | [![Release][b3]][b3l]
 
 A paragraph containing details answering, in general terms; who, what,
 where, what, why, and how.
@@ -85,11 +84,9 @@ works on cloud-native computing technologies in Seattle USA.
 _The views expressed here are his own. They are not endorsed, approved,
 or reviewed by any other person or organization._
 
-[b1b]: https://goreportcard.com/badge/github.com/philoserf/project
+[b1]: https://goreportcard.com/badge/github.com/philoserf/project
 [b1l]: https://goreportcard.com/report/github.com/philoserf/project
-[b2b]: https://img.shields.io/badge/godoc-reference-blue.svg
+[b2]: https://img.shields.io/badge/godoc-reference-blue.svg
 [b2l]: http://godoc.org/github.com/philoserf/project
-[b3b]: https://img.shields.io/github/release/philoserf/project.svg
+[b3]: https://img.shields.io/github/release/philoserf/project.svg
 [b3l]: https://github.com/philoserf/project/releases/latest
-[b4b]: https://masterminds.github.io/stability/experimental.svg
-[b4l]: https://masterminds.github.io/stability/experimental.html

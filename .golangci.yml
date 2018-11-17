@@ -1,0 +1,77 @@
+run:
+  skip-files:
+    - bindata.go
+
+linters:
+  enable-all: true
+  disable:
+    - gochecknoinits
+    - gochecknoglobals
+
+linters-settings:
+  errcheck:
+    check-type-assertions: true
+    check-blank: true
+  gocyclo:
+    min-complexity: 10
+  maligned:
+    suggest-new: true
+  unused:
+    check-exported: true
+  unparam:
+    algo: rta
+    check-exported: true
+  prealloc:
+    for-loops: true
+  gocritic:
+    enabled-checks:
+      - appendAssign
+      - appendCombine
+      - assignOp
+      - boolExprSimplify
+      - builtinShadow
+      - captLocal
+      - caseOrder
+      - commentedOutCode
+      - commentedOutImport
+      - defaultCaseOrder
+      - deprecatedComment
+      - docStub
+      - dupArg
+      - dupBranchBody
+      - dupCase
+      - dupSubExpr
+      - elseif
+      - emptyFallthrough
+      - emptyStringTest
+      - flagDeref
+      - flagName
+      - hugeParam
+      - ifElseChain
+      - importShadow
+      - indexAlloc
+      - initClause
+      - methodExprCall
+      - nestingReduce
+      - nilValReturn
+      - offBy1
+      - paramTypeCombine
+      - ptrToRefParam
+      - rangeExprCopy
+      - rangeValCopy
+      - regexpMust
+      - singleCaseSwitch
+      - sloppyLen
+      - sloppyReassign
+      - switchTrue
+      - typeSwitchVar
+      - typeUnparen
+      - underef
+      - unlabelStmt
+      - unlambda
+      - unnamedResult
+      - unnecessaryBlock
+      - unslice
+      - valSwap
+      - wrapperFunc
+      - yodaStyleExpr

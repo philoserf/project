@@ -16,6 +16,8 @@ func main() {
 		{name: "LICENSE", path: "./"},
 		{name: "README.md", path: "./"},
 
+		{name: "index.md", path: "./docs/"},
+
 		{name: "ISSUE_TEMPLATE.md", path: "./.github/"},
 		{name: "PULL_REQUEST_TEMPLATE.md", path: "./.github/"},
 	}

@@ -36,29 +36,31 @@ var rootCmd = &cobra.Command{
 	officia deserunt mollit anim id est laborum.
 	`,
 	Run: func(cmd *cobra.Command, args []string) {
-
-		var targets = []target{
-			{name: ".gitignore", path: "./"},
-			{name: "CHANGELOG.md", path: "./"},
-			{name: "CODE_OF_CONDUCT.md", path: "./"},
-			{name: "CONTRIBUTING.md", path: "./"},
-			{name: "LICENSE", path: "./"},
-
-			{name: "index.md", path: "./docs/"},
-			{name: "_config.yml", path: "./docs/"},
-
-			{name: "PULL_REQUEST_TEMPLATE.md", path: "./.github/"},
-			// TODO: add ISSUE_TEMPLATES
-		}
-
-		for t := range targets {
-			if _, err := targets[t].Write(); err != nil {
-				fmt.Printf("failed to write %v, %v\f", targets[t].name, err)
-			}
-		}
-
-		if err := os.Symlink("./docs/index.md", "./README.md"); err != nil {
-			fmt.Printf("failed to write README symlink: %v\n", err)
-		}
+		dropit()
 	},
+}
+
+func dropit() {
+	var targets = []target{
+		{name: ".gitignore", path: "./"},
+		{name: "CHANGELOG.md", path: "./"},
+		{name: "CODE_OF_CONDUCT.md", path: "./"},
+		{name: "CONTRIBUTING.md", path: "./"},
+		{name: "LICENSE", path: "./"},
+
+		{name: "index.md", path: "./docs/"},
+		{name: "_config.yml", path: "./docs/"},
+
+		{name: "PULL_REQUEST_TEMPLATE.md", path: "./.github/"},
+	}
+
+	for t := range targets {
+		if _, err := targets[t].Write(); err != nil {
+			fmt.Printf("failed to write %v, %v\f", targets[t].name, err)
+		}
+	}
+
+	if err := os.Symlink("./docs/index.md", "./README.md"); err != nil {
+		fmt.Printf("failed to write README symlink: %v\n", err)
+	}
 }

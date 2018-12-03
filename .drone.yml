@@ -1,0 +1,31 @@
+---
+kind: pipeline
+name: project
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+  - name: test
+    image: golang:1.11.2
+    commands:
+      - go mod download
+      - GO111MODULE=off go get golang.org/x/tools/cmd/goimports
+      - GO111MODULE=off go get github.com/golangci/golangci-lint/cmd/golangci-lint
+      - gofmt -d -e -l -s .
+      - goimports -d -e -l .
+      - golangci-lint run --enable-all --disable gochecknoinits --disable gochecknoglobals ./...
+      - go mod tidy
+      - go test -v -race -cover ./...
+
+  - name: build
+    image: golang:1.11.2
+    environment:
+      CGO_ENABLED: 0
+    commands:
+      - go mod tidy
+      - go build .
+      - ./project --help
+
+...

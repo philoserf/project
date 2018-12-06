@@ -1,6 +1,6 @@
 ---
 kind: pipeline
-name: project
+name: main
 
 platform:
   os: linux

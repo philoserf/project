@@ -1,0 +1,10 @@
+# Comment to a new issue.
+issueOpened: >
+  Thank you for raising an issue. I will review it as soon as possible.
+
+  Please make sure you have given ME as much context as possible.
+
+pullRequestOpened: >
+  Thank you for opening a pull request.
+
+  Please make sure you have followed the contributing guidelines. I will review it as soon as possible.

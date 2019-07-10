@@ -1,0 +1,44 @@
+---
+layout: home
+---
+
+image:https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fphiloserf%2Fproject%2Fbadge&style=flat&label=build[Build:Status]
+image:https://masterminds.github.io/stability/experimental.svg[Stability:Experimental]
+
+A paragraph containing details answering, in general terms; who, what, where, what, why, and how.
+
+== Usage
+
+Examples of how to use the project. For example; command line inputs and outputs.
+
+== Installation
+
+Concise instruction on the preferred means of installation. Perhaps with alternatives.
+
+`brew install philoserf/tap/project`
+
+== Contributing
+
+* see also `CONTRIBUTING.md` and `CODE_oF_CONDUCT.md`
+
+=== Testing
+
+Everything a contributor needs to know to run the project’s tests. Include prerequisites, make tasks, support scripts, lint, style, unit and integration tests.
+
+Provide examples of the test framework, test invocation, green and red test results. Also provide expectations of contributors.
+
+=== Other
+
+== License
+
+This project is offered to you under an MIT license.
+
+* see the `LICENSE` file
+
+== About
+
+=== The Project
+
+* inspiration
+* credits
+* alternatives

@@ -1,0 +1,24 @@
+title: project
+email: mark@philoserf.com
+description: eventually, a template for other projects
+baseurl: "/project"
+url: "https://philoserf.github.io"
+twitter_username: philoserf
+github_username: philoserf
+
+# Build settings
+markdown: kramdown
+theme: minima
+destination: ./build
+plugins:
+  - jekyll-asciidoc
+exclude:
+  - README.adoc
+
+asciidoc: {}
+asciidoctor:
+  safe: unsafe
+  attributes:
+    - idseparator=_
+    - source-highlighter=coderay
+    - icons=font

@@ -1,0 +1,3 @@
+# Contributing
+
+TODO: write this

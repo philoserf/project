@@ -1,0 +1,3 @@
+# Funding
+
+TODO: write this

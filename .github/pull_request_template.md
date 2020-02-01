@@ -1,5 +1,0 @@
-- [ ] reference the tracking issue
-- [ ] describe why this is the solution
-- [ ] describe where you think we should focus or attention
-- [ ] add details about how the solution works
-- [ ] add any more context or commentary

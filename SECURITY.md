@@ -1,3 +1,0 @@
-# Security
-
-TODO: write this

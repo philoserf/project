@@ -1,0 +1,11 @@
+name: checks
+on: push # yamllint disable-line
+jobs:
+  checks:
+    name: checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: markdownlint-cli2-action
+        uses: DavidAnson/markdownlint-cli2-action@v1.0.1

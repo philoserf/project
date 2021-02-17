@@ -1,11 +1,14 @@
-extends: relaxed
+extends: default
+
+yaml-files:
+  - '*.yaml'
+  - '*.yml'
+  - '.yamllint'
+
 rules:
-  line-length:
-    max: 100
+  line-length: disable
   braces:
     max-spaces-inside: 1
   indentation:
     spaces: consistent
-  document-start:
-    level: warning
-    present: false
+  document-start: disable

@@ -1,0 +1,53 @@
+repository:
+  name: project
+  description: A template, in continuous off-and-on improvement, for personal projects
+  homepage: https://philoserf.github.io/project
+  topics: boilerplate, personal, template
+  private: false
+  has_issues: true
+  has_projects: false
+  has_wiki: false
+  has_downloads: false
+  default_branch: main
+  allow_squash_merge: true
+  allow_merge_commit: false
+  allow_rebase_merge: false
+  enable_automated_security_fixes: true
+  enable_vulnerability_alerts: true
+
+labels:
+  - name: bug
+    description: An unexpected problem or unintended behavior
+  - name: documentation
+    description: A need for improvements or additions to documentation
+  - name: duplicate
+    description: Similar to another issues or pull requests
+  - name: enhancement
+    description: New feature requests
+  - name: invalid
+    description: An issue or pull request is no longer relevant
+  - name: question
+    description: An issue or pull request needs more information
+  - name: wontfix
+    description: Work won't continue on an issue or pull request
+  - name: chore
+    description: Work unrelated to the core purpose
+
+branches:
+  - name: main
+    protection:
+      required_pull_request_reviews:
+        required_approving_review_count: 1
+        dismiss_stale_reviews: true
+        require_code_owner_reviews: true
+        dismissal_restrictions:
+          users:
+            - philoserf
+      required_status_checks:
+        strict: true
+        contexts: []
+      enforce_admins: null
+      restrictions:
+        apps: []
+        users: []
+        teams: []
